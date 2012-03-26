@@ -30,3 +30,8 @@ attribute :rpc_host, :kind_of => String, :default => 'localhost'
 attribute :rpc_port, :kind_of => Integer, :default => 9091
 attribute :rpc_username, :kind_of => String, :default => 'transmission'
 attribute :rpc_password, :kind_of => String
+
+def initialize(*args)
+  super
+  @action = :create
+end
