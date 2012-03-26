@@ -39,7 +39,7 @@ require 'transmission-simple'
 
 template "transmission-default" do
   case node['platform']
-  when "centos","redhat" 
+  when "amazon","centos","redhat","scientific"
     path "/etc/sysconfig/transmission-daemon"
   else 
     path "/etc/default/transmission-daemon"
